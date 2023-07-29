@@ -62,7 +62,6 @@ if (myMap && myMap.hasLayer(overlayMaps["Earthquakes"])) {
   earthquakes.addTo(myMap);
 }
 
-
   // Update overlayMaps with the earthquakes layer 
   overlayMaps["Earthquakes"] = earthquakes;
 
@@ -110,10 +109,12 @@ function createMap(earthquakes) {
       weight: 2,
     }).addTo(tectonicPlates);
 
-    // If map exists and the Tectonic Plates layer is enabled, keep it enabled on refresh
-    if (myMap && myMap.hasLayer(overlayMaps["Tectonic Plates"])) {
-      tectonicPlates.addTo(myMap);
-    }
+// If map exists and the Tectonic Plates layer is enabled, clear its layers and keep it enabled on refresh
+if (myMap && myMap.hasLayer(overlayMaps["Tectonic Plates"])) {
+  overlayMaps["Tectonic Plates"].clearLayers();
+  tectonicPlates.addTo(myMap);
+}
+
 
     // Update overlayMaps with the tectonic plates layer 
     overlayMaps["Tectonic Plates"] = tectonicPlates;
@@ -200,22 +201,12 @@ layerControlContainer.id = 'layerControl';
 }
 
 // Function to fetch data from the API
-function fetchData(retries = 3, backoff = 500) { // default values: 3 retries, 500 ms backoff
-  d3.json(queryUrl)
-    .then(function (data) {
-      createFeatures(data.features);
-    })
-    .catch(function (error) {
-      console.error('Error:', error);
-      
-      if (retries > 0) {
-        // If fetch failed and we have retries left, wait for the backoff period and then retry
-        setTimeout(() => fetchData(retries - 1, backoff * 2), backoff);
-      } else {
-        // If no retries left, alert user
-        alert('Failed to fetch earthquake data after several attempts. Please refresh your browser or try again later.');
-      }
-    }); // end of d3.json() call
+function fetchData() {
+  // d3.json() call to get the earthquake data from queryUrl
+  d3.json(queryUrl).then(function (data) {
+    // Once there is a response, send the data.features object to the createFeatures function
+    createFeatures(data.features);
+  });
 }
 
 // Fetch initial data
