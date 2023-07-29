@@ -56,6 +56,13 @@ var earthquakes = L.geoJSON(earthquakeData, {
     },
   }); 
 
+// If map exists and the Earthquakes layer is enabled, clear its layers and keep it enabled on refresh
+if (myMap && myMap.hasLayer(overlayMaps["Earthquakes"])) {
+  overlayMaps["Earthquakes"].clearLayers();
+  earthquakes.addTo(myMap);
+}
+
+
   // Update overlayMaps with the earthquakes layer 
   overlayMaps["Earthquakes"] = earthquakes;
 
@@ -103,21 +110,27 @@ function createMap(earthquakes) {
       weight: 2,
     }).addTo(tectonicPlates);
 
-  // Update overlayMaps with the tectonic plates layer 
+    // If map exists and the Tectonic Plates layer is enabled, keep it enabled on refresh
+    if (myMap && myMap.hasLayer(overlayMaps["Tectonic Plates"])) {
+      tectonicPlates.addTo(myMap);
+    }
+
+    // Update overlayMaps with the tectonic plates layer 
     overlayMaps["Tectonic Plates"] = tectonicPlates;
 
-  // Create a baseMaps object to hold the base layers for the map
+    // Create a baseMaps object to hold the base layers for the map
     var baseMaps = {
       Satellite: satellite,
       Grayscale: grayscale,
       Outdoors: outdoors,
     };
-
-    // Create the map object with options and add the satellite tile layer as the default background
+  
+    // Check if myMap is not already initialized
     if (!myMap) {
+      // If map is not created yet, create it with both layers enabled
       myMap = L.map("map", {
         center: [37.09, -95.71],
-        zoom: 5,
+        zoom: 4,
         layers: [satellite, earthquakes, tectonicPlates],
       });
 
@@ -145,31 +158,68 @@ function createMap(earthquakes) {
       // Add the legend to the map
       legend.addTo(myMap);
 
-      // Create a layer control 
-      // Pass it the baseMaps and overlayMaps
-      // Add the layer control to the map
-      L.control.layers(baseMaps, overlayMaps, {
-        collapsed: false,
-      }).addTo(myMap);
-    } else {
+// Create the initial layer control
+L.control.layers(baseMaps, overlayMaps, {
+  collapsed: false,
+}).addTo(myMap);
 
-      // If the map is already initialized, remove existing layers and add the new earthquakes layer to it
+// Add the following code after the layer control creation
+let layerControlContainer = document.getElementsByClassName('leaflet-control-layers')[0];
+layerControlContainer.id = 'layerControl';
+
+} else {
+  // Before creating a new layer control, remove the old one from the DOM
+  document.getElementById('layerControl').remove();
+
+  // If the map is already initialized, remove existing layers and add the new earthquakes layer to it
+  if (myMap.hasLayer(overlayMaps["Earthquakes"])) {
       myMap.removeLayer(overlayMaps["Earthquakes"]);
+  }
+  if (myMap.hasLayer(overlayMaps["Tectonic Plates"])) {
       myMap.removeLayer(overlayMaps["Tectonic Plates"]);
+  }
 
-      // Add the updated earthquakes and tectonic plates to the overlayMaps object 
-      overlayMaps["Earthquakes"] = earthquakes;
-      overlayMaps["Tectonic Plates"] = tectonicPlates;
+  // Update the earthquakes and tectonic plates layers in the overlayMaps object 
+  overlayMaps["Earthquakes"] = earthquakes;
+  overlayMaps["Tectonic Plates"] = tectonicPlates;
 
-      // Add the new earthquakes and tectonic plates to the map 
-      earthquakes.addTo(myMap);
-      tectonicPlates.addTo(myMap);
-    }
+  // Add the new earthquakes and tectonic plates to the map 
+  earthquakes.addTo(myMap);
+  tectonicPlates.addTo(myMap);
+
+  // Create a new layer control
+  L.control.layers(baseMaps, overlayMaps, {
+      collapsed: false,
+  }).addTo(myMap);
+
+  // Assign an id to the new layer control's DOM element
+  let layerControlContainer = document.getElementsByClassName('leaflet-control-layers')[0];
+  layerControlContainer.id = 'layerControl';
+}
   });
 }
 
-// d3.json() call to get the earthquake data from queryUrl
-d3.json(queryUrl).then(function (data) {
-  // Once there is a response, send the data.features object to the createFeatures function
-  createFeatures(data.features);
-});
+// Function to fetch data from the API
+function fetchData(retries = 3, backoff = 500) { // default values: 3 retries, 500 ms backoff
+  d3.json(queryUrl)
+    .then(function (data) {
+      createFeatures(data.features);
+    })
+    .catch(function (error) {
+      console.error('Error:', error);
+      
+      if (retries > 0) {
+        // If fetch failed and we have retries left, wait for the backoff period and then retry
+        setTimeout(() => fetchData(retries - 1, backoff * 2), backoff);
+      } else {
+        // If no retries left, alert user
+        alert('Failed to fetch earthquake data after several attempts. Please refresh your browser or try again later.');
+      }
+    }); // end of d3.json() call
+}
+
+// Fetch initial data
+fetchData();
+
+// Update data every 5 minutes
+setInterval(fetchData, 300000); // 5 minutes = 300000 ms
