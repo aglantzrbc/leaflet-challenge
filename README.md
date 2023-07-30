@@ -13,9 +13,11 @@ Glantz Adam Bootcamp RUT-VIRT-DATA-PT-04-2023-U-LOLC-MWTH - Module 15
 
 ### 1. PROJECT DESCRIPTION
 
-The [United States Geological Survey](https://www.usgs.gov/), or USGS for short, is a government agency located in Reston, Virginia, that is responsible for providing scientific data about natural hazards, the health of ecosystems and the environment, and the impacts of climate and land-use change. Their scientists develop new methods and tools to supply timely, relevant, and useful information about the Earth and its processes. 
+The [United States Geological Survey](https://www.usgs.gov/), or USGS for short, is a government agency located in Reston, Virginia, USA, that is responsible for providing scientific data about natural hazards, the health of ecosystems and the environment, and the impacts of climate and land-use change. Its scientists develop new methods and tools to supply timely, relevant, and useful information about the Earth and its processes. 
 
-In this [project](https://courses.bootcampspot.com/courses/3337/assignments/54007?module_item_id=961640), the author has supposedly been tasked with developing a way to visualize USGS data that will allow the agency to better educate the public and other government organizations (and hopefully secure more funding) on issues facing the planet.
+In this [project](https://courses.bootcampspot.com/courses/3337/assignments/54007?module_item_id=961640), the author has supposedly been tasked with developing a way to visualize USGS data that will allow the agency to better educate the public and other government organizations (and hopefully secure more funding) on issues facing the planet. **The assignment calls for two separate parts of the task, first creating an interactive earthquake visualization and then expanding upon it with tectonic activity data, but the author combined them for the sake of efficiency.**
+
+The author selected json data representing a week of earthquake activity from the [USGS GeoJSON](http://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php) page, which updates every five minutes. The [D3](https://d3js.org/) and [Leaflet](https://leafletjs.com/index.html) libraries were accessed in [HTML](https://en.wikipedia.org/wiki/HTML5) and made available for visualizations in [JavaScript](https://codingbeautydev.com/blog/es13-javascript-features/).
 
 https://github.com/aglantzrbc/leaflet-challenge/assets/127694342/36edf0da-745b-46cb-8a29-dece0e09baa3
 
