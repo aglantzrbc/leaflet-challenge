@@ -115,7 +115,6 @@ if (myMap && myMap.hasLayer(overlayMaps["Tectonic Plates"])) {
   tectonicPlates.addTo(myMap);
 }
 
-
     // Update overlayMaps with the tectonic plates layer 
     overlayMaps["Tectonic Plates"] = tectonicPlates;
 
