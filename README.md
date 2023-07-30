@@ -13,8 +13,6 @@ Glantz Adam Bootcamp RUT-VIRT-DATA-PT-04-2023-U-LOLC-MWTH - Module 15
 
 ### 1. PROJECT DESCRIPTION
 
-<div style="padding:52.71% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/849817648?h=a271b55c07&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="New Recording - 7/29/2023, 8:23:08 PM"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-
 This [project](https://courses.bootcampspot.com/courses/3337/assignments/54006?module_item_id=961579) is designed to assess student skills using [JavaScript](https://www.javascript.com/) alongside other web language to construct an interactive dashboard. The project is based upon a study of the microbes that colonize the human navel. The original study materials are available [here](https://robdunnlab.com/projects/belly-button-biodiversity/) and [here](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0047712), and the citation is at the end of this README file. Using a sample of individuals' navel microbes, the study's dataset reveals that a small handful of microbial species (also called _operational taxonomic units_, or OTUs) were present in more than 70% of people, while the rest were relatively rare. *Coding was guided by the [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) ("don't repeat yourself") principle*.
 
 The [HTML](https://en.wikipedia.org/wiki/HTML) file provides the framework for the dashboard and the JavaScript file provides interactivity. The legend of files is as follows:
@@ -22,6 +20,12 @@ The [HTML](https://en.wikipedia.org/wiki/HTML) file provides the framework for t
 **HTML FILE:** index.html
 
 **JAVASCRIPT FILE:** app.js
+
+
+
+https://github.com/aglantzrbc/leaflet-challenge/assets/127694342/36edf0da-745b-46cb-8a29-dece0e09baa3
+
+
 
 The HTML file creates a **dropdown menu** of OTU IDs. Using the [d3](https://d3js.org/) library accessed in the HTML, the JavaScript file gives the dropdown menu access to the json data in the source file: _https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json_. Every time a sample individual is selected by number via the dropdown menu, metadata associated with it populates a **box of demographic information key pairs** right underneath the menu. A CSS stylesheet made accessible through the HTML code provided aesthetic elements for these items and the others listed below. See **Figure 1**.
 
