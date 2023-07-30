@@ -28,9 +28,11 @@ https://github.com/aglantzrbc/leaflet-challenge/assets/127694342/36edf0da-745b-4
 ### 2. INSTALLATION
 
 - The [GitHub](https://github.com/aglantzrbc/leaflet-challenge) repository (version 2.9.1) containing all project files is publicly accessible.
-- **Constituent files and their locations:**
-  -  _HTML:_ index.html -- located at root level
-  -  _CSS:_ style.css -- located in the _css_ subdirectory one level below the root level
+- **Constituent programfiles and their locations:**
+  -  _HTML:_ **index.html** -- located at root level
+  -  _CSS:_ **style.css** -- located in the _css_ subdirectory one level below the root level
+  -  _JAVASCRIPT_ (Mapbox access token): **config.js** -- located at root level
+  -  _JAVASCRIPT_ (main JavaScript file): **logic.js** -- located in the _Leaflet-Part-1_2_ subdirectory one level below the root level
 - Both the constituent files listed above are in the the same location. **If this relative placement is altered, the code won't run.**
 - The assignment details and starter code are proprietary and located on the [Rutgers University](https://www.rutgers.edu/) [(edX)](https://www.edx.org/) Bootcamp Spot [Module 14 Belly Button Challenge](https://courses.bootcampspot.com/courses/3337/assignments/54006?module_item_id=961579) webpage.
 - The latest versions of the coding languages are [HTML5](https://en.wikipedia.org/wiki/HTML5) and [JavaScript ES13](https://codingbeautydev.com/blog/es13-javascript-features/).
