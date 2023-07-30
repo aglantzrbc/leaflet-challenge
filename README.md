@@ -34,7 +34,7 @@ https://github.com/aglantzrbc/leaflet-challenge/assets/127694342/36edf0da-745b-4
   -  _JAVASCRIPT_ (Mapbox API access token): **config.js** -- located at root level
   -  _JAVASCRIPT_ (main JavaScript file): **logic.js** -- located in the _Leaflet-Part-1_2_ subdirectory one level below the root level
 - **If the relative placement of files, above, is altered, the code won't run.**
-- The program relies upon regular updates from the two source URLs at periodic inteervals. At times, imperfections or interruptions in the connection may cause a reduction in functionality, such as the inability to toggle layers. **When this happens, it is recommended that the user refresh the browser.**
+- The program relies upon regular updates from the two source URLs at periodic inteervals. At times, imperfections or interruptions in the connection may cause a reduction in functionality, such as the inability to toggle layers. **When this happens, it is recommended that the user refresh their browser.**
 - The program's Mapbox functionality is provided by an API access token individually supplied to the author. The terms of use may change over time or the token's utility may expire, causing the program to no longer function as intended. **If this happens, it is recommended that the user obtain their own access token from [Mapbox](https://www.mapbox.com/about/maps/) and update the _config.js_ file.**
 - The assignment details and starter code are proprietary and located on the [Rutgers University](https://www.rutgers.edu/) [(edX)](https://www.edx.org/) Bootcamp Spot [Module 15 Leaflet Challenge](https://courses.bootcampspot.com/courses/3337/assignments/54007?module_item_id=961640) webpage.
 - The latest versions of the coding languages are [HTML5](https://en.wikipedia.org/wiki/HTML5) and [JavaScript ES13](https://codingbeautydev.com/blog/es13-javascript-features/).
@@ -50,8 +50,8 @@ In addition to using the resources listed above, the author acquired query respo
 
 The author also consulted code and results from similar projects publicly accessible in [GitHub](https://github.com/) repositories and recoverable through [Google](https://www.google.com/) and comparable search engines:
 
-- [Larson, Mychele](https://www.linkedin.com/in/mychele-larson/): Austin, Texas, USA, March 2023. [Belly-Button-Challenge](https://github.com/mychele-larson/Belly-Button-Challenge)
-- [Tallant, Jeremy](https://www.linkedin.com/in/jeremy-tallant-717075220/): San Antonio, Texas, USA, February 2023. [belly-button-challenge](https://github.com/JeremyTallant/belly-button-challenge)
+- [Cooper, Tanisha](https://www.linkedin.com/in/tanisha-cooper-5b3743197/): Locust Grove, Georgia, USA, July 2022. [leaflet-challenge](https://github.com/TanishaCooper/leaflet-challenge)
+- [Tallant, Jeremy](https://www.linkedin.com/in/jeremy-tallant-717075220/): San Antonio, Texas, USA, February 2023. [leaflet-challenge](https://github.com/JeremyTallant/leaflet-challenge)
 - [Wang, Yeyan](https://www.linkedin.com/in/yeyan-wang/): Seattle, Washington, USA, March 2023. [belly-button-challenge](https://github.com/yeyanwang/belly-button-challenge)
 - [Zhaksylyk, Madina](https://www.linkedin.com/in/madinazh/): Minneapolis, Minnesota, USA, January 2023. [Belly-Button-Challenge](https://github.com/madinalikes/Belly-Button-Challenge)
 
