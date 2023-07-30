@@ -29,7 +29,7 @@ https://github.com/aglantzrbc/leaflet-challenge/assets/127694342/36edf0da-745b-4
 
 - The [GitHub](https://github.com/aglantzrbc/leaflet-challenge) repository (version 2.9.1) containing all project files is publicly accessible.
 - **Constituent program files and their locations:**
-  -  _HTML:_ **index.html** -- located at root level
+  -  _HTML:_ **index.html** -- located at root level (run this file)
   -  _CSS:_ **style.css** -- located in the _css_ subdirectory one level below the root level
   -  _JAVASCRIPT_ (Mapbox API access token): **config.js** -- located at root level
   -  _JAVASCRIPT_ (main JavaScript file): **logic.js** -- located in the _Leaflet-Part-1_2_ subdirectory one level below the root level
