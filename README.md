@@ -58,7 +58,7 @@ The author also consulted code and results from similar projects publicly access
 
 The full citations for the json data used in this project are as follows:
 
-- Jiri Hulcr,Andrew M. Latimer,Jessica B. Henley,Nina R. Rountree,Noah Fierer,Andrea Lucky,Margaret D. Lowman,Robert R. Dunn: _PLOS One_ 7(11) e47712, San Francisco, California, USA, November 2012. [A Jungle in There: Bacteria in Belly Buttons are Highly Diverse, but Predictable](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0047712)
+- United States Geological Survey, Earthquake Hazards Program: Reston, Virgina, USA. [GeoJSON Summary Format](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php)
 
 
 ### 5. LICENSES
