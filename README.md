@@ -58,7 +58,7 @@ The author also consulted code and results from similar projects publicly access
 
 The full citations for the json data used in this project are as follows:
 
-- [Ahlenius, Hugo](Hugo Ahlenius), [Nordpil](https://nordpil.com/): Stockholm, Sweden, October 2014. [tectonicplates](https://github.com/fraxen/tectonicplates)
+- [Ahlenius, Hugo](https://www.linkedin.com/in/hugoahlenius/), [Nordpil](https://nordpil.com/): Stockholm, Sweden, October 2014. [tectonicplates](https://github.com/fraxen/tectonicplates)
 - [United States Geological Survey](https://www.usgs.gov/), Earthquake Hazards Program: Reston, Virgina, USA. [GeoJSON Summary Format](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php)
 
 
