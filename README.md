@@ -19,37 +19,11 @@ In this [project](https://courses.bootcampspot.com/courses/3337/assignments/5400
 
 The author selected json data representing a week of earthquake activity from the [USGS GeoJSON](http://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php) page, which updates every five minutes. Tectonic data was sourced through a [GitHub](https://github.com/) [repository](https://github.com/fraxen/tectonicplates) maintained for research. The [D3](https://d3js.org/) and [Leaflet](https://leafletjs.com/index.html) libraries were accessed in [HTML](https://en.wikipedia.org/wiki/HTML5) and made available in [JavaScript](https://codingbeautydev.com/blog/es13-javascript-features/). The author subscribed to the [Mapbox](https://www.mapbox.com/about/maps/) API and used an individually-assigned access token to make different tiles available in JavaScript, imcluding _Satellite_, _Grayscale_, and _Outdoors_. A separate [CSS](https://en.wikipedia.org/wiki/CSS) file was also pulled in through the HTML code for more map styling.
 
-**D3's** _d3.json()_ function fetched data from the source URLs and passed it to other functions to create the map features; D3 also regularly fetched updated data as the json sources updated. **Leaflet** was used to create the map and plot the data fetched by D3. Employing functions including _createFeatures()_ and _createMap()_, it constructed map layers, added the earthquake and tectonic plate data as variably sized and colored markers on the map, handled the map controls (like the zoom and layer control), and added a legend to the map. **Mapbox** provided the styled map layers.
+**D3's** _d3.json()_ function fetched data from the source URLs and passed it to other functions to create the map features; D3 also regularly fetched updated data as the json sources updated. **Leaflet** performed the "heavy lifting" in this project, and was used to create the map and plot the data fetched by D3. Employing functions including _createFeatures()_, _createMap()_, and _bindPopup_, it constructed map layers, added the earthquake and tectonic plate data as variably-sized and -colored markers on the map, associated mouse-over tooltips with the markers, handled the map controls (like the zoom and layer control), and added a legend to the map. **Mapbox** provided the styled map layers. The result was an interactive map whose functionality is illustrated in **Video 1**.
 
 https://github.com/aglantzrbc/leaflet-challenge/assets/127694342/36edf0da-745b-46cb-8a29-dece0e09baa3
 
-The HTML file creates a **dropdown menu** of OTU IDs. Using the [d3](https://d3js.org/) library accessed in the HTML, the JavaScript file gives the dropdown menu access to the json data in the source file: _https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json_. Every time a sample individual is selected by number via the dropdown menu, metadata associated with it populates a **box of demographic information key pairs** right underneath the menu. A CSS stylesheet made accessible through the HTML code provided aesthetic elements for these items and the others listed below. See **Figure 1**.
-
-![image](https://github.com/aglantzrbc/belly-button-challenge/assets/127694342/6c68dcb4-2eba-42dc-ba83-8cc626140436)
-
-**Figure 1** | *HTML dropdown menu and JavaScript metadata box of demographic information key pairs*
-
-Calling the [Plotly](https://plotly.com/javascript/) library, which is built on top of the d3 library and also made available through the HTML code, a **bar chart** (**Figure 2**) and a **bubble chart** (**Figure 3**) were constructed, each showing the top ten microbes by volume. Mousing over each bar and each bubble gives access to the OTU information associated with each sample individual's microbes.
-
-![image](https://github.com/aglantzrbc/belly-button-challenge/assets/127694342/f5f923ee-2e60-494c-8d8c-451bd2bb3e13)
-
-**Figure 2** | *Bar chart of each sample individual's top ten microbes by volume*
-
-![image](https://github.com/aglantzrbc/belly-button-challenge/assets/127694342/a40bdaa0-c452-4f2c-a446-055f6b70a7af)
-
-**Figure 3** | *Bubble chart of each sample individual's top ten microbes by volume*
-
-As an optional visual aid, a **gauge** was created with a red pointer indicating the binned navel washing frequency from the metadata of the sample. This is illustrated in **Figure 4**.
-
-![image](https://github.com/aglantzrbc/belly-button-challenge/assets/127694342/a25f4b02-a8ed-4cae-9ccf-d5f6ca33278d)
-
-**Figure 4** | *Gauge of binned navel washing frequency from each sample individual's metadata*
-
-In addition to being able to scroll over the bars and bubbles to get microbe data, the dashboard is interactive in the sense that whenever the user selects a new sample individual's number from the dropdown menu, the entire dashboard updates with that person's information. See **Figure 5** for some of the JavaScript code that makes this possible.
-
-![image](https://github.com/aglantzrbc/belly-button-challenge/assets/127694342/ba96056f-4972-4e69-bb6a-46697148047b)
-
-**Figure 5** | *Portion of JavaScript code that updates all elements of the dashboard whenever a new individual's number is selected in the dropdown menu*
+**Video 1** | Vimeo *video showing interactive map functionality*
 
 ### 2. INSTALLATION
 
