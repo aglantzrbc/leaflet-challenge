@@ -13,19 +13,11 @@ Glantz Adam Bootcamp RUT-VIRT-DATA-PT-04-2023-U-LOLC-MWTH - Module 15
 
 ### 1. PROJECT DESCRIPTION
 
-This [project](https://courses.bootcampspot.com/courses/3337/assignments/54006?module_item_id=961579) is designed to assess student skills using [JavaScript](https://www.javascript.com/) alongside other web language to construct an interactive dashboard. The project is based upon a study of the microbes that colonize the human navel. The original study materials are available [here](https://robdunnlab.com/projects/belly-button-biodiversity/) and [here](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0047712), and the citation is at the end of this README file. Using a sample of individuals' navel microbes, the study's dataset reveals that a small handful of microbial species (also called _operational taxonomic units_, or OTUs) were present in more than 70% of people, while the rest were relatively rare. *Coding was guided by the [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) ("don't repeat yourself") principle*.
+The [United States Geological Survey](https://www.usgs.gov/), or USGS for short, is a government agency located in Reston, Virginia, that is responsible for providing scientific data about natural hazards, the health of ecosystems and the environment, and the impacts of climate and land-use change. Their scientists develop new methods and tools to supply timely, relevant, and useful information about the Earth and its processes. 
 
-The [HTML](https://en.wikipedia.org/wiki/HTML) file provides the framework for the dashboard and the JavaScript file provides interactivity. The legend of files is as follows:
-
-**HTML FILE:** index.html
-
-**JAVASCRIPT FILE:** app.js
-
-
+In this [project](https://courses.bootcampspot.com/courses/3337/assignments/54007?module_item_id=961640), the author has supposedly been tasked with developing a way to visualize USGS data that will allow the agency to better educate the public and other government organizations (and hopefully secure more funding) on issues facing the planet.
 
 https://github.com/aglantzrbc/leaflet-challenge/assets/127694342/36edf0da-745b-46cb-8a29-dece0e09baa3
-
-
 
 The HTML file creates a **dropdown menu** of OTU IDs. Using the [d3](https://d3js.org/) library accessed in the HTML, the JavaScript file gives the dropdown menu access to the json data in the source file: _https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json_. Every time a sample individual is selected by number via the dropdown menu, metadata associated with it populates a **box of demographic information key pairs** right underneath the menu. A CSS stylesheet made accessible through the HTML code provided aesthetic elements for these items and the others listed below. See **Figure 1**.
 
@@ -61,6 +53,7 @@ In addition to being able to scroll over the bars and bubbles to get microbe dat
 - Both the constituent files listed above are in the the same location. **If this relative placement is altered, the code won't run.**
 - The assignment details and starter code are proprietary and located on the [Rutgers University](https://www.rutgers.edu/) [(edX)](https://www.edx.org/) Bootcamp Spot [Module 14 Belly Button Challenge](https://courses.bootcampspot.com/courses/3337/assignments/54006?module_item_id=961579) webpage.
 - The latest versions of the coding languages are [HTML5](https://en.wikipedia.org/wiki/HTML5) and [JavaScript ES13](https://codingbeautydev.com/blog/es13-javascript-features/).
+- Coding was guided by the [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) ("don't repeat yourself") principle.
 
 ### 3. CONTRIBUTING
 
