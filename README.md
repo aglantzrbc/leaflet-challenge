@@ -34,10 +34,11 @@ https://github.com/aglantzrbc/leaflet-challenge/assets/127694342/36edf0da-745b-4
   -  _JAVASCRIPT_ (Mapbox API access token): **config.js** -- located at root level
   -  _JAVASCRIPT_ (main JavaScript file): **logic.js** -- located in the _Leaflet-Part-1_2_ subdirectory one level below the root level
 - **If the relative placement of files, above, is altered, the code won't run.**
-- The program relies upon regular updates from the two source URLs at periodic inteervals. At times, imperfections or interruptions in the connection may cause a reduction in functionality, such as the inability to toggle layers. **When this happens, it is recommended that the user refresh their browser.**
+- The program relies upon regular updates from the two source URLs at periodic inteervals. At times, imperfections or interruptions in the connection may cause a reduction in functionality, such as the inability to toggle layers. **When this happens, it is recommended that the user refresh their browser.** _Please note that alerts in the platform console may occur, but do not necessarily mean function is impaired._
 - The program's Mapbox functionality is provided by an API access token individually supplied to the author. The terms of use may change over time or the token's utility may expire, causing the program to no longer function as intended. **If this happens, it is recommended that the user obtain their own access token from [Mapbox](https://www.mapbox.com/about/maps/) and update the _config.js_ file.**
 - The assignment details and starter code are proprietary and located on the [Rutgers University](https://www.rutgers.edu/) [(edX)](https://www.edx.org/) Bootcamp Spot [Module 15 Leaflet Challenge](https://courses.bootcampspot.com/courses/3337/assignments/54007?module_item_id=961640) webpage.
 - The latest versions of the coding languages are [CSS3](https://en.wikipedia.org/wiki/CSS), [HTML5](https://en.wikipedia.org/wiki/HTML5), and [JavaScript ES13](https://codingbeautydev.com/blog/es13-javascript-features/).
+- This project was created on a PC using [Google Chrome](https://www.google.com/chrome/) for Windows version 115.0.5790.102 and its associated [Google DevTools](https://developer.chrome.com/docs/devtools/) extension. **If the program doesn't function, it is recommended that the user attempt running it on this platform and browser.**
 - Coding was guided by the [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) ("don't repeat yourself") principle.
 
 ### 3. CONTRIBUTING
@@ -55,7 +56,7 @@ The author also consulted code and results from similar projects publicly access
 - [Tallant, Jeremy](https://www.linkedin.com/in/jeremy-tallant-717075220/): San Antonio, Texas, USA, February 2023. [leaflet-challenge](https://github.com/JeremyTallant/leaflet-challenge)
 - [Zhu, Rosa](https://www.linkedin.com/in/jiuhe-zhu/): Chicago, Illinois, USA, October 2020. [leaflet-challenge](https://github.com/Jiuhe2020/leaflet-challenge)
 
-The experimental data for this assignment ultimately derives from this study:
+The full citations for the json data used in this project are as follows:
 
 - Jiri Hulcr,Andrew M. Latimer,Jessica B. Henley,Nina R. Rountree,Noah Fierer,Andrea Lucky,Margaret D. Lowman,Robert R. Dunn: _PLOS One_ 7(11) e47712, San Francisco, California, USA, November 2012. [A Jungle in There: Bacteria in Belly Buttons are Highly Diverse, but Predictable](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0047712)
 
