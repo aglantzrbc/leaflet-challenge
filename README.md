@@ -51,9 +51,9 @@ In addition to using the resources listed above, the author acquired query respo
 The author also consulted code and results from similar projects publicly accessible in [GitHub](https://github.com/) repositories and recoverable through [Google](https://www.google.com/) and comparable search engines:
 
 - [Cooper, Tanisha](https://www.linkedin.com/in/tanisha-cooper-5b3743197/): Locust Grove, Georgia, USA, July 2022. [leaflet-challenge](https://github.com/TanishaCooper/leaflet-challenge)
+- [Janer, Jordan](https://www.linkedin.com/in/jordan-janer/): Los Angeles, California, USA, February 2022. [leaflet-challenge](https://github.com/JordanJaner/leaflet-challenge)
 - [Tallant, Jeremy](https://www.linkedin.com/in/jeremy-tallant-717075220/): San Antonio, Texas, USA, February 2023. [leaflet-challenge](https://github.com/JeremyTallant/leaflet-challenge)
-- [Wang, Yeyan](https://www.linkedin.com/in/yeyan-wang/): Seattle, Washington, USA, March 2023. [belly-button-challenge](https://github.com/yeyanwang/belly-button-challenge)
-- [Zhaksylyk, Madina](https://www.linkedin.com/in/madinazh/): Minneapolis, Minnesota, USA, January 2023. [Belly-Button-Challenge](https://github.com/madinalikes/Belly-Button-Challenge)
+- [Zhu, Rosa](https://www.linkedin.com/in/jiuhe-zhu/): Chicago, Illinois, USA, October 2020. [leaflet-challenge](https://github.com/Jiuhe2020/leaflet-challenge)
 
 The experimental data for this assignment ultimately derives from this study:
 
