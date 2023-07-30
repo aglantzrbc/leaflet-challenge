@@ -27,7 +27,7 @@ https://github.com/aglantzrbc/leaflet-challenge/assets/127694342/36edf0da-745b-4
 
 ### 2. INSTALLATION
 
-- The [GitHub](https://github.com/aglantzrbc/belly-button-challenge) repository (version 2.9.1) containing all project files is publicly accessible.
+- The [GitHub](https://github.com/aglantzrbc/leaflet-challenge) repository (version 2.9.1) containing all project files is publicly accessible.
 - Both the constituent files listed above are in the the same location. **If this relative placement is altered, the code won't run.**
 - The assignment details and starter code are proprietary and located on the [Rutgers University](https://www.rutgers.edu/) [(edX)](https://www.edx.org/) Bootcamp Spot [Module 14 Belly Button Challenge](https://courses.bootcampspot.com/courses/3337/assignments/54006?module_item_id=961579) webpage.
 - The latest versions of the coding languages are [HTML5](https://en.wikipedia.org/wiki/HTML5) and [JavaScript ES13](https://codingbeautydev.com/blog/es13-javascript-features/).
